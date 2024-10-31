@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block titulo %} Gestion materias {% endblock %}
+
+{% block cuerpo %}
+  <h1>Gestionar Productos David Salazar</h1>
+{% for m in Losproductos %}
+
+<li>{{m.Id_Producto}}.-.-.-{{m.Precio}}.-.-.-{{m.Marca}}.-.-.-{{m.Calidad}}.-.-.-{{m.Recibido}}.-.-.-{{m.Proovedor}}.-.-.-{{m.Cantidad}}</li>
+
+{% endfor %}
+
+
+{% endblock %}
